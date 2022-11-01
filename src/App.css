@@ -75,7 +75,7 @@ html{
             font-size: 5vh;
             font-weight: bolder;
             font-family: lobster;
-            animation: glow 1s ease-in-out infinite alternate, fadeInAnimation ease 7s;
+            animation: glow 1s ease-in-out infinite alternate, fadeInAnimation ease 3s;
         }
 
         nav{
@@ -86,7 +86,7 @@ html{
             padding: 1vh;
             font-size: 2vh;
             font-family: lobster;
-            animation: fadeInAnimation ease 7s;  	
+            animation: fadeInAnimation ease 3s;  	
         }
             nav > a {
                 margin-left: 2vh;
@@ -118,9 +118,6 @@ html{
             margin: 2vh;
             max-width: 98vw;
             height: fit-content;
-                animation: fadeInAnimation ease 5s;
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards;
 		}
 
 
