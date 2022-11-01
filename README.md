@@ -1,7 +1,5 @@
 # TO-DO-LIST-EXAMPLE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Locations
 
 ### `App.js`
@@ -22,3 +20,7 @@ Creates a new item in the list
 Main CSS.
 Includes a "complete" class. Which is updated by a function in the Display component.
 **Feel free to use this as a template for your new project checklist!**
+
+
+### `screenshot.png`
+**to-do-list-2>screenshot.png**
