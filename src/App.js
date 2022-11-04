@@ -14,6 +14,9 @@ function App() {
       <header>
         To Do List
       </header>
+      <nav>
+        link | link | link
+      </nav>
 
       <main>
         <Form list={list} setList={setList} />

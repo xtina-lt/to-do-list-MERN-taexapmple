@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 const Display = ({list, setList}) => {
     const change = (e) => {
-        // change value
+        // change value isong !
         e.complete = !e.complete;
         // update list
         let update = [...list];
@@ -10,14 +10,12 @@ const Display = ({list, setList}) => {
         setList(update);
     }
 
-    // if ("complete" : true)
-    //      className="complete"
-    const markComplete = e => {if (e.complete) return "complete"}
 
     // if button is clicked
     // use filter to remove item from the list
     const deleteMe = val => {
-        setList( list.filter( (item, i) => {return item.content !== val} ) );
+        //                                () does not need return
+        setList( list.filter( (item, i) => (item.content !== val) ) );
     }
 
     return (
@@ -35,7 +33,9 @@ const Display = ({list, setList}) => {
                             by using a function 
                             to change the className
                         */}
-                        <span className={ markComplete(item) }>
+                        <span className={ (item.complete) ? "complete" : null }>
+                                        {/* if ("complete" : true)
+                                        className="complete" ===> text-decoration: line-through */}
                             {item.content}
                         </span>
                         {/* delete button */}
