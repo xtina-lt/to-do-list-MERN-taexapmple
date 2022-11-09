@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
 const Display = ({list, setList}) => {
-    
-    const change = (item) => {
+
+    const changeMe = (item) => {
         // change value isong !
         item.complete = !item.complete;
         // change list state to updated list
@@ -27,7 +27,7 @@ const Display = ({list, setList}) => {
                 {list.map( (item, index) =>
                     <li>
                         {/* show client as checkbox */}
-                        <input type="checkbox" onChange={ e => change(item) } />
+                        <input type="checkbox" onChange={ e => changeMe(item) } />
                         {/* cross out if it is marked complete
                             by using a function 
                             to change the className
