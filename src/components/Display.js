@@ -34,7 +34,9 @@ const Display = ({list, setList}) => {
                         */}
                         <span className={ (item.complete) ? "complete" : null }>
                                         {/* if ("complete" : true)
-                                        className="complete" ===> text-decoration: line-through */}
+                                        className="complete" ===> text-decoration: line-through 
+                                        bootstrap: className="text-decoration-line-through"
+                                        */}
                             {item.content}
                         </span>
                         {/* delete button */}
