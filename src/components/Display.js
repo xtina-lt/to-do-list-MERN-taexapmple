@@ -4,10 +4,8 @@ const Display = ({list, setList}) => {
     const change = (e) => {
         // change value isong !
         e.complete = !e.complete;
-        // update list
-        let update = [...list];
         // change list state to updated list
-        setList(update);
+        setList([...list]);
     }
 
 
@@ -15,7 +13,7 @@ const Display = ({list, setList}) => {
     // use filter to remove item from the list
     const deleteMe = val => {
         //                                () does not need return
-        setList( list.filter( (item, i) => (item.content !== val) ) );
+        setList( list.filter( item => (item.content !== val) ) );
     }
 
     return (
