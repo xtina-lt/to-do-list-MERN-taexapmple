@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 
 const Display = ({list, setList}) => {
-    const change = (e) => {
+    
+    const change = (item) => {
         // change value isong !
-        e.complete = !e.complete;
+        item.complete = !item.complete;
         // change list state to updated list
         setList([...list]);
     }
